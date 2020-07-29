@@ -28,10 +28,14 @@ const NavContainer = styled.div`
 	align-items: center;
 	height: 50px;
 	padding: 2rem 2rem 1rem 2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 
 	@media ${tablet} {
 		padding: 1rem;
 		height: auto;
+		z-index: 500;
 	}
 
 	@media ${mobile} {

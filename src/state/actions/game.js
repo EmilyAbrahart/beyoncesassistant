@@ -1,7 +1,7 @@
 import * as types from '../types';
 import { axiosWithAuth } from '../../utils/axios';
 import store from '../store';
-import { SPRITE_SIZE, SPRITE_SIZE_MOB } from '../../utils/constants';
+import { SPRITE_SIZE } from '../../utils/constants';
 
 export const getRooms = () => async dispatch => {
 	dispatch({ type: types.GET_ROOMS_START });

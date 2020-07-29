@@ -112,10 +112,11 @@ const DialogContainer = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		z-index: 5000;
+
 	}
 	@media ${mobile} {
 		height: ${MAP_HEIGHT_MOB}px;
 		width: ${MAP_HEIGHT_MOB}px;
+		z-index: 5000;
 	}
 `;

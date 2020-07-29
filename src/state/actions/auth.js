@@ -1,6 +1,7 @@
 import * as types from '../types';
 import { Axios } from '../../utils/axios';
 
+
 export const register = (credentials, history) => dispatch => {
 	dispatch({ type: types.REQUEST_START });
 	Axios()
@@ -10,10 +11,11 @@ export const register = (credentials, history) => dispatch => {
 			dispatch({ type: types.REGISTER_SUCCESS, payload: res.data });
 			history.push('/');
 		})
-		.catch(error => {
-			dispatch({ type: types.REGISTER_FAILURE, payload: error.message });
+		.catch((error) => {			
+			dispatch({ type: types.REGISTER_FAILURE, payload: error.response.data});
 		});
 };
+
 
 export const login = (credentials, history) => dispatch => {
 	dispatch({ type: types.REQUEST_START });

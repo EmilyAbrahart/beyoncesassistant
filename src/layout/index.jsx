@@ -49,6 +49,9 @@ const LayoutContainer = styled.div`
 	height: 100vh;
 	width: 100%;
 	background-color: ${backgroundPrimary};
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	@media ${tablet} {
 		overflow-y: hidden;
 		max-width: 100vw;
@@ -60,9 +63,11 @@ const ComponentContainer = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 80%;
+	height: 100%;
+	padding-top: 2rem;
 	@media ${tablet} {
 		padding-bottom: 3rem;
 		overflow-y: hidden;
+		max-height: 80%;
 	}
 `;

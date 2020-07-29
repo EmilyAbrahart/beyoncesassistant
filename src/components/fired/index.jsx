@@ -35,6 +35,7 @@ export default connect((state) => state)(Fired);
 
 const FiredContainer = styled.div`
 	position: absolute;
+
 	z-index: 500;
 	height: ${MAP_HEIGHT}px;
 	width: ${MAP_WIDTH}px;
@@ -46,6 +47,10 @@ const FiredContainer = styled.div`
 	@media ${mobile} {
 		height: ${MAP_HEIGHT_MOB}px;
 		width: ${MAP_WIDTH_MOB}px;
+		overflow-y: scroll;
+		top: 0;
+		left: 0;
+		margin: 0;
 	}
 `;
 
@@ -58,13 +63,18 @@ const FiredDiv = styled(WhiteDiv)`
 	margin: 5px;
 	background-color: ${wallBackground};
 	@media ${mobile} {
-		width: ${MAP_WIDTH_MOB}px;
-		height: ${MAP_HEIGHT_MOB}px;
+		width: 100%;
+		height: 100%;
 		margin: 0;
 		overflow-y: scroll;
+		max-width: 100vw;
+		max-height: 100vh;
+		padding: 1rem;
 
 		h2 {
 			margin: 0;
+			padding: 0;
+			font-size: 2rem;
 		}
 	}
 
