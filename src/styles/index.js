@@ -297,3 +297,17 @@ export const Menu = styled.div`
 		}
 	}
 `;
+
+export const ErrorContainer = styled.div`
+	color: red;
+	font-size: 0.8rem;
+	background-color: rgba(204,10,10, 0.2);
+	padding: 0.4rem;
+	border: 1px solid red;
+	text-align: center;
+
+	@media ${mobile} {
+		padding: 0.2rem;
+		font-size: 0.6rem;
+	}
+`;

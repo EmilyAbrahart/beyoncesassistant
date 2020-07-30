@@ -52,8 +52,8 @@ const LayoutContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-y: hidden;
 	@media ${tablet} {
-		overflow-y: hidden;
 		max-width: 100vw;
 	}
 `;

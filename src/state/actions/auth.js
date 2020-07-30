@@ -27,7 +27,7 @@ export const login = (credentials, history) => dispatch => {
 			history.push('/');
 		})
 		.catch(error => {
-			dispatch({ type: types.LOGIN_FAILURE, payload: error });
+			dispatch({ type: types.LOGIN_FAILURE, payload: error.response });
 		});
 };
 
